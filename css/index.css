@@ -1,0 +1,210 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+/*--=====================================
+=            BARRA DE NAVEGACION        =
+========================================*/
+
+.recuadro-superior{
+    background-color: rgb(175, 200, 177);
+    margin-top: 0;
+    width: 100vw;
+    height: 80px;
+    
+}
+
+.img-logo{
+    width: 150px;
+    position: absolute;
+    z-index: 50;
+    margin: 30px;
+}
+
+.container-fluid{
+    
+    position: relative;
+}
+.recuadro-inferior{
+    background-color: rgb(175, 200, 177);
+    margin-top: 0;
+    width: 100vw;
+    height: 20px;
+    
+    
+}
+
+/*--=====================================
+=                  BODY                =
+========================================*/
+
+.hero-section{
+    background-color: rgb(237, 234, 230);
+    padding: 120px 0px;
+}
+
+/*--=====================================
+=            GALERÍA DEL HOME           =
+========================================*/
+
+.galeriahome{
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: 300px;
+    justify-self: center;
+    justify-content: center;
+    gap: 1rem;
+    
+
+}
+
+.galeriahome__item{
+    background-color: rgb(220, 136, 34);
+
+}
+
+.galeriahome__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeriahome__item--1{
+    grid-column:span 2;
+    grid-row: span 2;
+}
+
+.galeriahome__item--2{
+    grid-column:span 1;
+    grid-row: span 1;
+
+}
+.galeriahome__item--3{
+    grid-column:span 1;
+    grid-row: span 1;
+
+}
+
+.galeriahome__item--4{
+    grid-column:span 2;
+    grid-row: span 1;
+
+}
+
+/*--=====================================
+=            RESPONSIVE HOME            =
+========================================*/
+@media(max-width: 1024px){
+    .galeriahome{
+        
+        margin: 30px;
+    }    
+}
+
+@media(max-width: 768px){
+    .galeriahome{
+        
+        margin: 30px;
+        grid-template-columns: repeat(3, 1fr);   
+    }     
+    .galeriahome__item--2{
+        grid-column:span 1;
+        grid-row: span 2;    
+    } 
+}
+
+@media(max-width: 600px){
+    .galeriahome{
+        
+        margin: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;    
+    } 
+}
+
+
+/*--=====================================
+=          GALERÍA DE LA CAFETERÍA    =
+========================================*/
+
+.galeriacafeteria{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-columns: 300px;
+    justify-self: center;
+    justify-content: center;
+    gap: 1rem;
+    
+
+}
+
+
+
+.galeriacafeteria__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeriacafeteria__item--1{
+    grid-column:span 4;
+    grid-row: span 4; 
+}
+
+.galeriacafeteria__item--2{
+    grid-column:span 2;
+    grid-row: span 2; 
+}
+
+.galeriacafeteria__item--3{
+    grid-column:span 2;
+    grid-row: span 2; 
+}
+
+.galeriacafeteria__item--4{
+    grid-column:span 2;
+    grid-row: span 2; 
+}
+
+.galeriacafeteria__item--5{
+    grid-column:span 2;
+    grid-row: span 2; 
+}
+
+.galeriacafeteria__item--6{
+    grid-column:span 2;
+    grid-row: span 2; 
+}
+
+.galeriacafeteria__item--7{
+    grid-column:span 2;
+    grid-row: span 2; 
+}
+
+.galeriacafeteria__item--8{
+    grid-column:span 4;
+    grid-row: span 2; 
+}
+
+/*--=====================================
+=         RESPONSIVE CAFETERIA          =
+========================================*/
+@media(max-width: 1200px){
+    .galeriacafeteria{
+        
+        margin: 30px;
+    }    
+}
+
+
+
