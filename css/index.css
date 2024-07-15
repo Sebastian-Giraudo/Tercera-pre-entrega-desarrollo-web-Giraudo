@@ -2,54 +2,67 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    
 
 }
 
-/*--=====================================
-=            BARRA DE NAVEGACION        =
-========================================*/
+/*--==================================================================================================================
+=                                                   BARRA DE NAVEGACIÓN                                              =
+===================================================================================================================--*/
 
 .recuadro-superior{
     background-color: rgb(175, 200, 177);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
     width: 100vw;
-    height: 80px;
-    
-}
-
-.img-logo{
-    width: 150px;
-    position: absolute;
-    z-index: 50;
-    margin: 30px;
+    height: 80px;    
 }
 
 .container-fluid{
-    
-    position: relative;
+    font-family: "Poppins", sans-serif;
 }
+
+.container-logo{    
+    margin-left: 20px; 
+        }
+
+.img-logo{
+    width: 150px;    
+}
+
+
 .recuadro-inferior{
     background-color: rgb(175, 200, 177);
     margin-top: 0;
     width: 100vw;
-    height: 20px;
-    
-    
+    height: 20px; 
 }
 
-/*--=====================================
-=                  BODY                =
-========================================*/
+.nav-link:hover{
+    font-weight: bold;
+}
+
+/*--==================================================================================================================
+=                                                      BODY                                                          =
+===================================================================================================================--*/
 
 .hero-section{
     background-color: rgb(237, 234, 230);
-    padding: 120px 0px;
+    padding-top: 30px;
 }
 
-/*--=====================================
-=            GALERÍA DEL HOME           =
-========================================*/
+
+/*--==================================================================================================================
+=                                                   GALERÍA DEL HOME                                                 =
+===================================================================================================================--*/
+.titulo{
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: "Paytone One", sans-serif;
+    color:  rgb(220, 185, 148);
+    
+}
 
 .galeriahome{
     max-width: 1000px;
@@ -61,13 +74,10 @@
     justify-self: center;
     justify-content: center;
     gap: 1rem;
-    
-
 }
 
 .galeriahome__item{
     background-color: rgb(220, 136, 34);
-
 }
 
 .galeriahome__img{
@@ -97,17 +107,78 @@
     grid-row: span 1;
 
 }
+/* Animaciones */
+.scale:hover{
+    transform: scale(1.2, 1.1);
+}
+
+/*--=====================================
+=           CONTENEDOR INFERIOR         =
+========================================*/
+.container-inferior{
+    display: grid;
+    justify-items: end;
+    padding:0px 20px 50px;
+}
 
 /*--=====================================
 =            RESPONSIVE HOME            =
 ========================================*/
+@media(max-width: 1200px){
+    footer{
+        font-family: "Arsenal SC", sans-serif;
+        font-style: normal;
+        background-color: rgb(175, 200, 177);
+    }
+    
+    .container-footer{
+        grid-column:span 3;    
+        font-family: "Arsenal SC", sans-serif; 
+    }
+    
+    .card-body{
+        margin: 20px;
+    }
+    
+    .redes{
+        grid-column:span 3;
+        text-align: center;
+    }
+    
+    .icon-redes a{
+        text-decoration: none;
+        color: black;
+        font-size: 40px;
+        padding: 10px;
+    }
+
+}
+/*--=======================================================================================================*/
+
 @media(max-width: 1024px){
     .galeriahome{
-        
         margin: 30px;
     }    
+    footer{
+        margin:auto;
+    }
 }
+/*--=======================================================================================================*/
+@media(max-width: 992px){
 
+    .img-logo{
+        width: 100px;        
+    }
+
+    .align-items-start{
+        padding-right: 8px;
+    }
+
+    .titulo{
+        padding-bottom: 5px;
+    }
+}
+/*--=======================================================================================================*/
 @media(max-width: 768px){
     .galeriahome{
         
@@ -118,15 +189,38 @@
         grid-column:span 1;
         grid-row: span 2;    
     } 
-}
 
-@media(max-width: 600px){
-    .galeriahome{
-        
-        margin: 20px;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;    
-    } 
+
+    .col{
+        grid-column:span 3;  
+    }
+    .contenedor-desplegable{
+        margin:12px;
+    }
+}
+/*--=======================================================================================================*/
+@media(max-width: 576px){
+
+    .recuadro-superior{
+        height: 50px;    
+    }
+    .img-logo{
+        width: 80px;    
+    }
+    .card {
+        font-size: 10px;
+    }
+    .card-body{
+        width: 120px;
+    }
+    .col{
+        padding: 0px;
+    }
+    .row.align-items-start{
+        margin:0px;
+        padding: 0px;  
+    }
+
 }
 
 
@@ -431,35 +525,22 @@
 
 
 
-/*--=====================================
-=                 FOOTER                =
-========================================*/
-
-.contenedor-footer{
-    width: 100vw;
-    padding: 50px;
-    display: grid;
-    align-items: stretch;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: 300px;
-    justify-self: center;
-    justify-content: center;
-    gap: 5rem;
-    background-color: rgb(175, 200, 177);
+/*--==================================================================================================================
+=                                                   FOOTER                                                           =
+===================================================================================================================--*/
+footer{
     font-family: "Arsenal SC", sans-serif;
-    
-
+    font-style: normal;
+    background-color: rgb(175, 200, 177);
 }
 
-.contenido-footer h5{
-
-    text-align: center;
-    margin-bottom: 20px;
-    
+.container-footer{
+    grid-column:span 3;    
+    font-family: "Arsenal SC", sans-serif; 
 }
 
-.contacto{
-    text-align: center;
+.card-body{
+    margin: 20px;
 }
 
 .redes{
@@ -472,5 +553,4 @@
     color: black;
     font-size: 40px;
     padding: 10px;
-    
 }
