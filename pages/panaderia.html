@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- Tipografía -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
-        <!-- Hoja de estilos -->
-        <link rel="stylesheet" href="../css/index.css">
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <!-- Iconos de Bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <!-- Favicon -->
-        <title>Franco Colella</title>
-        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Animate -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Favicon -->
+    <title>Franco Colella</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
 
 <!--==================================================================================================================
 =                                                   BARRA DE NAVEGACIÓN                                              =
 ===================================================================================================================-->
 <header>
-    <div class="recuadro-superior">
-        <!-- Imagen para logo principal -->
-        <div>
-            <a class="navbar-brand" href="#"><img src="../img/logo-empresa.png" alt="logo de empresa" class="img-logo"></a>
-        </div>
-    </div>
+    <div class="recuadro-superior"></div>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">               
         <div class="container-fluid">
-
+            <!-- Imagen para logo principal -->
+            <div class="container-logo">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo-empresa.png" alt="logo de empresa" class="img-logo animate__animated animate__rotateIn"></a>
+            </div>
             <a class="navbar-brand"></a>
             
             <!-- Botón de hamburguesa -->
@@ -45,23 +50,21 @@
             <!-- Menú del navegador -->
             <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav ms-auto fs-5">
-
                 <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link animate__animated animate__slideInDown" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="./cafeteria.html">Cafetería</a>
+                <a class="nav-link animate__animated animate__slideInUp" href="../pages/cafeteria.html">Cafetería</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" href="#">Panadería</a>
+                <a class="nav-link active animate__animated animate__slideInDown" href="#">Panadería</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="./pasteleria.html">Pastelería</a>
+                <a class="nav-link animate__animated animate__slideInUp" href="../pages/pasteleria.html">Pastelería</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="./brunch.html">Brunch</a>
+                <a class="nav-link animate__animated animate__slideInDown" href="../pages/brunch.html">Brunch</a>
                 </li>
-
             </ul>
             </div>
         <!-- Fin del menú del navegador -->
@@ -70,18 +73,19 @@
 
     <div class="recuadro-inferior"></div>
 </header>
-
-
 <body>
 <!--==================================================================================================================
 =                                           GALERÍA DE LA PANADERIA
 ===================================================================================================================-->
 
 <main class="hero-section">
+    <div class="titulo animate__animated animate__zoomIn">
+        <h1>Panes y facturas</h1>
+    </div>
 
     <section class="galeriapanaderia">
         <!-- Imagen 1 de la panadería -->
-        <div class="galeria__item galeriapanaderia__item--1">
+        <div class="galeria__item galeriapanaderia__item--1 animate__animated animate__swing">
             <img src="../img/panaderia/pan-celiaco.jpg" alt="" class="galeriapanaderia__img">
             <div class="galeria__overlay">
                 <span class="galeria__text">Opciones SIN TACC apto celíacos. Pan de sarraceno y legumbres integral.</span>
@@ -89,7 +93,7 @@
         </div>
 
         <!-- Imagen 2 de la panadería -->
-        <div class="galeria__item galeriapanaderia__item--2">
+        <div class="galeria__item galeriapanaderia__item--2 animate__animated animate__tada">
             <img src="../img/panaderia/masa-madre.jpg" alt="" class="galeriapanaderia__img">
             <div class="galeria__overlay">
                 <span class="galeria__text">Nueva panificación con harinas orgánicas y masa madre.</span>
@@ -97,7 +101,7 @@
         </div>
 
         <!-- Imagen 3 de la panadería -->
-        <div class="galeria__item galeriapanaderia__item--3">
+        <div class="galeria__item galeriapanaderia__item--3 animate__animated animate__tada">
             <img src="../img/panaderia/pan-masa-madre.jpg" alt="" class="galeriapanaderia__img">
             <div class="galeria__overlay">
                 <span class="galeria__text">Encontrá nuestros panes de masa madre en casa centra.</span>
@@ -105,7 +109,7 @@
         </div>
 
         <!-- Imagen 4 de la panadería -->
-        <div class="galeria__item galeriapanaderia__item--4">
+        <div class="galeria__item galeriapanaderia__item--4 animate__animated animate__swing">
             <img src="../img/panaderia/roll-relleno.jpg" alt="" class="galeriapanaderia__img">
             <div class="galeria__overlay">
                 <span class="galeria__text">Roll de canela relleno.</span>
@@ -113,7 +117,7 @@
         </div>
 
         <!-- Imagen 5 de la panadería -->
-        <div class="galeria__item galeriapanaderia__item--5">
+        <div class="galeria__item galeriapanaderia__item--5 animate__animated animate__swing">
             <img src="../img/panaderia/croissants.jpg" alt="" class="galeriapanaderia__img">
             <div class="galeria__overlay">
                 <span class="galeria__text">Croissants de masa madre & harinas agroecológicas.</span>
@@ -121,7 +125,7 @@
         </div>
 
         <!-- Imagen 6 de la panadería -->
-        <div class="galeria__item galeriapanaderia__item--6">
+        <div class="galeria__item galeriapanaderia__item--6 animate__animated animate__tada">
             <img src="../img/panaderia/vigilantes.jpg" alt="" class="galeriapanaderia__img">
             <div class="galeria__overlay">
                 <span class="galeria__text">Los clásicos vigilantes, con membrillo o con dulce de leche.</span>
@@ -129,7 +133,7 @@
         </div>
 
         <!-- Imagen 7 de la panadería -->
-        <div class="galeria__item galeriapanaderia__item--7">
+        <div class="galeria__item galeriapanaderia__item--7 animate__animated animate__tada">
             <img src="../img/panaderia/pirulinco-1.jpg" alt="" class="galeriapanaderia__img">
             <div class="galeria__overlay">
                 <span class="galeria__text">I ♡ pirulinco</span>
@@ -137,68 +141,104 @@
         </div>
 
         <!-- Imagen 8 de la panadería -->
-        <div class="galeria__item galeriapanaderia__item--8">
+        <div class="galeria__item galeriapanaderia__item--8 animate__animated animate__swing">
             <img src="../img/panaderia/pirulinco.jpg" alt="" class="galeriapanaderia__img">
             <div class="galeria__overlay">
                 <span class="galeria__text">Siempre es un buen momento para un buen PIRULINCO.</span>
             </div>
         </div>
-
-
-
     </section>
-    
+    <!-- Contenedor inferior -->
+    <div class="container-inferior"></div>
     </main>
-    <footer>
-        <div class="contenedor-footer">
-            <div class="contenido-footer">
-                <h5>Nosotros</h5>
-                <p>
-                    Estamos dentro de los polos gastronómicos mas visitados de nuestra ciudad, contando con dos cafeterías ambientadas y preparadas para que vos y tu familia puedan pasar una tarde increíble.<be>
-                    Vení y hacenos afitriones de tu momento especial.
-            
-                </p>
-            </div>
-            <div class="contenido-footer">
-                <h5>Sucursales</h5>
-                <ul>
-                    <li>San Jerónimo y Eva Perón</li>
-                    <li>1° de Mayo y Juan de Garay</li>
-                    <li>Bv. Galvez y Belgrano</li>
-                    <li>Suipacha 2425</li>
-                    <li>San Martín 1895</li>
-                    <li>San Martín 3091 Take Away</li>
-                    <li>Av. Richieri 3222. Santo Tomé</li>
-                    <li>General Lopez 2626</li>
-                    <li>Bv.Galvez 1829</li>
-                    <li>San Martín y Suipacha</li>
-                    <li>Alberdi y Balcarce</li>
-                </ul>
-            </div>
-            <div class="contenido-footer">
-                <h5>Contacto</h5>
-                <div class="contacto">
-                    <p>
-                        <i class="bi bi-house-door"> Las Heras 3199 - Casa central</i>      
-                    </p>       
-                    <p>
-                        <i class="bi bi-envelope"> info@francocolella.com.ar</i>
-                    </p>
-                    <p>
-                        <i class="bi bi-telephone"> 4528317/4539811</i>
-                    </p>
+<!--==================================================================================================================
+=                                                   FOOTER                                                           =
+===================================================================================================================-->
+
+<footer>
+    <!-- Configuración de botones -->
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <p class="d-inline-flex gap-1 container-footer">
+                <div class="col"><a class="btn btn-light fw-bold" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false " aria-controls="multiCollapseExample1">Nosotros</a></div>
+                <div class="col"><a class="btn btn-light fw-bold" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Sucursales</a></div>
+                <div class="col"><a class="btn btn-light fw-bold" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Contacto</a></div>
+            </p>
+        </div>
+    </div>
+    <!-- Contenedor general de las cartas -->
+    <div class="contenedor-desplegable">
+        <div class="row align-items-start">
+            <!-- Carta de nosotros -->
+            <div class="col">
+                <div class="collapse multi-collapse contenido-nosotros" id="multiCollapseExample1">
+                    <div class="card card-body ">
+                        Estamos dentro de los polos gastronómicos mas visitados de nuestra ciudad, contando con dos cafeterías ambientadas y preparadas para que vos y tu familia puedan pasar una tarde increíble.<br>
+                        Vení y hacenos afitriones de tu momento especial.  
+                    </div>
                 </div>
             </div>
-            <div class="redes">
-                <h5>Siguenos en:</h5>
-                <div class="icon-redes">
-                    <a href="https://www.instagram.com/franco_colella_panaderias/"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.facebook.com/francocolellaboulevard"><i class="bi bi-facebook"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=5493424792555"><i class="bi bi-whatsapp"></i></a>
+            <!-- Carta de sucursales -->
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        <ul>
+                            <li>San Jerónimo y Eva Perón</li>
+                            <li>1° de Mayo y Juan de Garay</li>
+                            <li>Bv. Galvez y Belgrano</li>
+                            <li>Suipacha 2425</li>
+                            <li>San Martín 1895</li>
+                            <li>San Martín 3091 Take Away</li>
+                            <li>Av. Richieri 3222. Santo Tomé</li>
+                            <li>General Lopez 2626</li>
+                            <li>Bv.Galvez 1829</li>
+                            <li>San Martín y Suipacha</li>
+                            <li>Alberdi y Balcarce</li>
+                        </ul>
+                    </div>
                 </div>
-                <p>2024 Todos los derechos reservados.</p>
+            </div>
+            <!-- Carta de contacto -->
+            <div class="col">
+                <div class="collapse multi-collapse contenido-nosotros" id="multiCollapseExample3">
+                    <div class="card card-body ">
+                        <!-- Formulario de contacto -->
+                        <form>
+                            <div class="mb-3">
+                                <label for="Name" class="form-label">Nombre y apellido</label>
+                                <input type="text" class="form-control" id="Name" aria-label="Name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </div>
+
+        <!-- Redes sociales -->
+        <div class="redes">
+            <h5>Siguenos en:</h5>
+            <div class="icon-redes">
+                <a href="https://www.instagram.com/franco_colella_panaderias/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/francocolellaboulevard" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5493424792555" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            <p>2024 Todos los derechos reservados.</p>
+        </div>
+    
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+</html>
