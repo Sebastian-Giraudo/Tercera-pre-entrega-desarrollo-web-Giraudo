@@ -1,0 +1,81 @@
+.hero-section{
+    background-color: rgb(237, 234, 230);
+    padding-top: 30px;
+
+    .titulo{
+        padding-bottom: 30px;
+        text-align: center;
+        font-family: "Paytone One", sans-serif;
+        color:  rgb(220, 185, 148);
+
+        @include desktop{
+            padding-bottom: 5px;; 
+        }
+    }
+
+    .galeriahome{
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        align-items: stretch;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-columns: 300px;
+        justify-self: center;
+        justify-content: center;
+        gap: 1rem;
+
+        @include xl{
+            margin: 30px;
+        }
+
+        @include tablet{
+            margin: 30px;
+            grid-template-columns: repeat(3, 1fr);  
+        }
+
+        .galeriahome__item{
+            background-color: rgb(220, 136, 34);
+
+            .galeriahome__img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .galeriahome__item--1{
+            grid-column:span 2;
+            grid-row: span 2;
+        }
+        
+        .galeriahome__item--2{
+            grid-column:span 1;
+            grid-row: span 1;
+
+            @include tablet{
+                grid-column:span 1;
+                grid-row: span 2;   
+            }
+        }
+
+        .galeriahome__item--3{
+            grid-column:span 1;
+            grid-row: span 1;
+        }
+        
+        .galeriahome__item--4{
+            grid-column:span 2;
+            grid-row: span 1;
+        }
+
+        .scale:hover{
+            transform: scale(1.2, 1.1);
+        }
+    }
+
+    .container-inferior{
+        display: grid;
+        justify-items: end;
+        padding:0px 20px 50px;
+    }
+}
